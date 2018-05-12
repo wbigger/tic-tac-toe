@@ -1,8 +1,8 @@
 #!/usr/bin/env python
-from samplebase import SampleBase
-from rgbmatrix import graphics
+#from samplebase import SampleBase
+#from rgbmatrix import graphics
 import time
-#import Adafruit_ADS1x15
+import Adafruit_ADS1x15
 import sys
 #import ADS1x15
 #import urllib.parse
@@ -84,6 +84,23 @@ class GraphicsTest(SampleBase):
 
 #def check_number(data):
 
+def check_sign(n_value, type_sign):
+	if type_sign == "x":
+		return
+
+
+def x_position():
+	red = graphics.Color(180, 0, 0)
+	graphicsTest = GraphicsTest()
+	canvas = graphicsTest.matrix
+	font = graphics.Font()
+	font.loadFont("../../../fonts/7x13.bdf")
+	x_values = {
+			1 : graphics.drawLine(canvas,3,3,9,9,red)
+			}
+	return x_values
+
+
 def get_dict_ranges():
 	dict_values = {1 : range(18000, 19000),
         	2 : range(16000, 18000),
@@ -146,8 +163,8 @@ def main():
 
 # Main function
 if __name__ == "__main__":
-    graphics_test = GraphicsTest()
-    if (not graphics_test.process()):
-        graphics_test.print_help()
+   # graphics_test = GraphicsTest()
+   # if (not graphics_test.process()):
+    #    graphics_test.print_help()
     main()
 
