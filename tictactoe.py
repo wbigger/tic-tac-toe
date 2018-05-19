@@ -1,8 +1,8 @@
 #!/usr/bin/env python
-#from samplebase import SampleBase
-#from rgbmatrix import graphics
+from samplebase import SampleBase
+from rgbmatrix import graphics
 import time
-import Adafruit_ADS1x15
+#import Adafruit_ADS1x15
 import sys
 #import ADS1x15
 #import urllib.parse
@@ -50,7 +50,7 @@ class GraphicsTest(SampleBase):
     def run(self):
         canvas = self.matrix
         font = graphics.Font()
-        font.LoadFont("../../../fonts/7x13.bdf")
+        font.LoadFont("../../.font.LoadFont("../../../fonts/7x13
 
         red = graphics.Color(180, 0, 0)
         green = graphics.Color(0, 180, 0)
@@ -84,21 +84,13 @@ class GraphicsTest(SampleBase):
 
 #def check_number(data):
 
-def check_sign(n_value, type_sign):
-	if type_sign == "x":
-		return
-
-
-def x_position():
-	red = graphics.Color(180, 0, 0)
+def x_sign(n_sign, type_sign):
 	graphicsTest = GraphicsTest()
-	canvas = graphicsTest.matrix
+	canvas = self.matrix
 	font = graphics.Font()
-	font.loadFont("../../../fonts/7x13.bdf")
-	x_values = {
-			1 : graphics.drawLine(canvas,3,3,9,9,red)
-			}
-	return x_values
+	
+	x_position = {
+			0 : 
 
 
 def get_dict_ranges():
@@ -163,8 +155,8 @@ def main():
 
 # Main function
 if __name__ == "__main__":
-   # graphics_test = GraphicsTest()
-   # if (not graphics_test.process()):
-    #    graphics_test.print_help()
+    graphics_test = GraphicsTest()
+    if (not graphics_test.process()):
+        graphics_test.print_help()
     main()
 
