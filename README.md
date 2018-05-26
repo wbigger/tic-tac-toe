@@ -14,3 +14,6 @@ Le **componenti fisiche** del Tic Tac Toe sviluppato dalla classe, sono:
 * Raspberry Pi 3 Model B. 
 
 Ogni partita è scandita da un timer, e quando il giocatore perde o vince il dispositivo emette un suono e c'è un decremento o incremento delle vite.
+
+
+![Tic Tac Toe](IMG_2502.JPG)
